@@ -1,0 +1,7 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: r2013-02-28-todo_development
+  pool: 5
+  username: chyld
+  password:

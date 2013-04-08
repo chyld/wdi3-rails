@@ -1,0 +1,12 @@
+#timer
+#controls
+  = form_tag '#' do
+    = text_field_tag :count, 3, :autofocus => true
+    = button_tag :reset, :id => :reset
+    = submit_tag :start, :id => :start
+#status
+%table
+  %tr
+    %td#a
+    %td#b
+    %td#c

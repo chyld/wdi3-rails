@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>R20130212Planets</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<nav>
+  <li><%= link_to('All', planets_path) %></li>
+  <li><%= link_to('New', planets_new_path) %></li>
+</nav>
+
+<%= yield %>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+@import url(http://fonts.googleapis.com/css?family=Elsie+Swash+Caps);
+@import url(http://fonts.googleapis.com/css?family=Julius+Sans+One);
+
+body
+{
+  background-color: #F2E3B3;
+  padding: 25px;
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 15px;
+}
+
+input
+{
+  width: 300px;
+}
+
+nav
+{
+  font-family: 'Elsie Swash Caps', cursive;
+  font-size: 40px;
+}
+
+li
+{
+  list-style-type: none;
+  float: left;
+  margin: 10px;
+}
+
+a
+{
+  text-decoration: none;
+  color: #D95D30;
+}
+
+p
+{
+  padding: 10px;
+  color: #736C48;
+}
+
+.clear
+{
+  clear: both;
+}

@@ -1,0 +1,3 @@
+<% @flights = [@flight] %>
+$('#overview').empty().append('<%=j render 'flights' %>');
+$('#airplane').empty().append('<%=j render(:partial => 'airplanes/airplane', :locals => {:airplane => @flight.airplane, :flight => @flight}) %>');

@@ -1,0 +1,22 @@
+{
+  "name": "morris.js",
+  "version": "0.4.1",
+  "homepage": "http://oesmith.github.com/morris.js",
+  "description": "Easy, pretty charts",
+  "author": {
+    "name": "Olly Smith",
+    "email": "olly@oesmith.co.uk"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/oesmith/morris.js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/oesmith/morris.js/issues"
+  },
+  "devDependencies": {
+    "grunt-coffee": "~> 0.0.6",
+    "grunt-mocha": "~> 0.1.7",
+    "grunt-contrib-less": "~> 0.3.2"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "",
+  "sourceRoot": "",
+  "sources": [
+    "/assets/source_maps/app/assets/javascripts/controllers/posts_new_controller.coffee"
+  ],
+  "names": [],
+  "mappings": "AAAA;CAAA,CAAA,CAAG,EAA2B,CAAL,UAAsB,EAA/C;CACE,CAAM,CAAA,CAAN,KAAM;CACJ,EAAA,CAAC,EAAD,CAAA;CACC,GAAA,SAAD,IAAA;CAFF,IAAM;CADR,GAAyB;CAAzB"
+}

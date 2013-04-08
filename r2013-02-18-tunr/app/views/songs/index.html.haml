@@ -1,0 +1,2 @@
+%p.newlink= link_to('New Song', new_song_path, :class => 'button radius') if is_admin?
+= render :partial => '/shared/songs', :locals => {:songs => @songs}

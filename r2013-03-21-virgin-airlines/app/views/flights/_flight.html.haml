@@ -1,0 +1,9 @@
+%tr
+  %td= flight.departure
+  %td= link_to(flight.name, flight, :class => 'button tiny secondary radius')
+  %td= flight.depart
+  %td= flight.arrive
+  %td= flight.airplane.name
+  %td= flight.airplane.seats
+  %td= flight.reserved
+  %td= flight.available

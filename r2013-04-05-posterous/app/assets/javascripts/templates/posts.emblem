@@ -1,0 +1,8 @@
+linkTo 'posts.new' class='button tiny success' | New Post
+
+table: each model: tr
+  td
+    button{action 'delete' this} class='button tiny radius secondary' x
+  td
+    linkTo 'posts.show' this: = title
+outlet

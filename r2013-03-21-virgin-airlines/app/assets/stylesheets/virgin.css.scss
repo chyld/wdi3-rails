@@ -1,0 +1,57 @@
+$normal:      #0099ff;
+$hover:       #007acc;
+$secondary:   #ff0099;
+$success:     #ff9900;
+$alert:       #9900ff;
+$body:        #cccccc;
+
+body
+{
+  background: #ffffff url(/assets/virgin.jpg) no-repeat top right;
+}
+
+table
+{
+  border: 1px solid #000000;
+}
+
+table td
+{
+  background-color: #ffffff;
+}
+
+#user
+{
+  position: relative;
+  top: 35px;
+  left: 170px;
+}
+
+.airplane table
+{
+  border-collapse: separate;
+  border-spacing: 5px;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+.airplane td
+{
+  padding: 5px;
+  border: 1px solid #999999;
+  border-radius: 4px;
+  width: 40px;
+  font-family: monospace;
+}
+
+.seat-hover
+{
+  background-color: $secondary;
+  color: #ffffff;
+}
+
+.taken
+{
+  background-color: $success;
+  color: #ffffff;
+}

@@ -1,0 +1,33 @@
+#graphs > div
+{
+  width: 300px;
+  border: 1px solid #555555;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  float: left;
+}
+
+.graph
+{
+  height: 150px;
+}
+
+#graphs > div > table
+{
+  width: 100%;
+  margin: 0px;
+  text-align: left;
+  font-size: 11px;
+}
+
+.checkbox
+{
+  float: left;
+  margin-bottom: 25px;
+  margin-right: 10px;
+}
+
+.clear
+{
+  clear: both;
+}

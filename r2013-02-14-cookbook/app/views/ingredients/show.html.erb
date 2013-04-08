@@ -1,0 +1,9 @@
+<%= link_to('New Ingredient', new_ingredient_path) %>
+:: <%= link_to('Edit Ingredient', edit_ingredient_path(@ingredient)) %>
+:: <%= link_to('Delete Ingredient', @ingredient, :method => :delete, :confirm => 'Are you sure?') %>
+<div class='spacer'></div>
+
+<ul>
+  <li><%= @ingredient.name %></li>
+  <li><%= image_tag(@ingredient.image) %></li>
+</ul>

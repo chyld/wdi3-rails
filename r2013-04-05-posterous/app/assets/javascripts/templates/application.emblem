@@ -1,0 +1,9 @@
+.row
+  .large-5.columns
+    h1.subheader Posterous
+    linkTo 'index' class='button tiny' | Home
+    linkTo 'about' class='button tiny' | About
+    linkTo 'faq' class='button tiny' | Faq
+    linkTo 'posts' class='button tiny' | Posts
+    outlet
+  .large-7.columns

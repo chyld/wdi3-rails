@@ -1,0 +1,8 @@
+- @flights = [@flight]
+
+#flight{:'data-flight-id' => @flight.id, :'data-auth-token' => form_authenticity_token}
+#overview
+  = render 'flights'
+
+#airplane
+  = render(:partial => 'airplanes/airplane', :locals => {:airplane => @flight.airplane, :flight => @flight})

@@ -1,0 +1,8 @@
+%table
+  %tr
+    %th Album Name
+    %th Photo Count
+  - @albums.each do |album|
+    %tr
+      %td= link_to(album.name, album, :class => 'button tiny radius success')
+      %td= album.photos.count

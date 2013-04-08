@@ -1,0 +1,12 @@
+.row
+  .large-3.columns
+    = form_for @photo, :html => {:multipart => true}, :remote => true do |f|
+      = f.label :name
+      = f.text_field :name, :autofocus => true
+      = f.label :url
+      = f.file_field :url
+      = f.text_field :remote_url_url
+      = hidden_field_tag :album_id, params[:album_id]
+      = link_to 'Cancel', '#', :'data-clear-form' => true, :class => 'button tiny radius alert'
+      = f.submit nil, :class => 'button tiny radius success'
+  .large-9.columns

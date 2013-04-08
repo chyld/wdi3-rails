@@ -1,0 +1,8 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: r2013-03-08-tradr_development
+  pool: 5
+  host: localhost
+  username: chyld
+  password:

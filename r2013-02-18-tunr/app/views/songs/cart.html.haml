@@ -1,0 +1,14 @@
+.row
+  .five.columns
+    = render(:partial => 'shared/errors', :locals => {:object => @song})
+    = form_for @song, :url => purchase_song_path(@song), :method => 'post' do |f|
+      = f.label :name
+      = f.text_field :name, :disabled => true
+      = f.label :cost
+      = f.text_field :cost, :disabled => true
+      %p
+        - @auth.mixtapes.order(:name).each do |mixtape|
+          %span= mixtape.name
+          = check_box_tag 'song[mixtape_ids][]', mixtape.id
+      = f.submit 'Purchase Song', :class => 'button radius'
+  .seven.columns

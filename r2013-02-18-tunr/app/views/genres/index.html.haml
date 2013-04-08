@@ -1,0 +1,7 @@
+%p.newlink= link_to('New Genre', new_genre_path, :class => 'button radius') if is_admin?
+%table
+  - @genres.each do |genre|
+    %tr{:class => cycle('row0', 'row1')}
+      %td= genre.name
+      %td= link_to('Show', genre, :class => 'button radius success tiny')
+      %td= link_to('Edit', edit_genre_path(genre), :class => 'button radius tiny') if is_admin?

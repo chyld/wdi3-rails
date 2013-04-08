@@ -1,0 +1,26 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: r2013-03-25-numb3rs_development
+  pool: 5
+  host: localhost
+  username: chyld
+  password:
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: r2013-03-25-numb3rs_test
+  pool: 5
+  host: localhost
+  username: chyld
+  password:
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: r2013-03-25-numb3rs_production
+  pool: 5
+  host: localhost
+  username: chyld
+  password:

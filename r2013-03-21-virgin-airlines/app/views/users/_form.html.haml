@@ -1,0 +1,6 @@
+= form_for @user, :remote => true do |f|
+  = f.text_field :email, :autofocus => true, :placeholder => 'bob@gmail.com'
+  = f.password_field :password, :placeholder => 'password'
+  = f.password_field :password_confirmation, :placeholder => 'password'
+  = link_to('Cancel', '#', :'data-clear-user-form' => true, :class => 'button tiny radius alert')
+  = f.submit nil, :class => 'button tiny radius success'

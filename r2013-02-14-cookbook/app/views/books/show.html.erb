@@ -1,0 +1,29 @@
+<%= link_to('New Book', new_book_path) %>
+:: <%= link_to('Edit Book', edit_book_path(@book)) %>
+:: <%= link_to('Delete Book', @book, :method => :delete, :confirm => 'Are you sure?') %>
+<div class='spacer'></div>
+
+<ul>
+  <li><%= link_to(@book.title, @book) %></li>
+  <li><%= @book.cuisine %></li>
+  <li><%= @book.chef %></li>
+  <li><%= image_tag(@book.image) %></li>
+</ul>
+
+<div class='spacer'></div>
+
+<ol>
+<% @book.recipes.each do |recipe| %>
+  <li>
+    <ul>
+      <li><%= recipe.name %></li>
+      <li><%= image_tag(recipe.image) %></li>
+
+      <% recipe.ingredients.each do |ingredient| %>
+        <li><%= ingredient.name %></li>
+        <li><%= image_tag(ingredient.image) %></li>
+      <% end %>
+    </ul>
+  </li>
+<% end %>
+</ol>

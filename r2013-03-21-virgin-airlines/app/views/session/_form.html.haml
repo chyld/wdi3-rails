@@ -1,0 +1,5 @@
+= form_tag session_index_path, :remote => true do
+  = text_field_tag :email, nil, :autofocus => true, :placeholder => 'bob@gmail.com'
+  = password_field_tag :password, nil, :placeholder => 'password'
+  = link_to('Cancel', '#', :'data-clear-user-form' => true, :class => 'button tiny radius alert')
+  = submit_tag 'Virgin Airlines', :class => 'button tiny radius success'

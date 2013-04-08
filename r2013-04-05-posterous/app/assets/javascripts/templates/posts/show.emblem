@@ -1,0 +1,18 @@
+if isEditing
+  button{action 'save'} class='button tiny radius success' Save
+  Ember.TextField valueBinding='title'
+  Ember.TextField valueBinding='author'
+  Ember.TextArea valueBinding='body'
+else
+  button{action 'edit'} class='button tiny radius alert' Edit
+  table
+    tr
+      th Title
+      th Posted
+      th Author
+      th Body
+    tr
+      td = title
+      td = date posted
+      td = author
+      td = body

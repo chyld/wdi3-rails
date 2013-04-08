@@ -1,0 +1,23 @@
+@import url(http://fonts.googleapis.com/css?family=Nosifer);
+
+#boxes
+{
+  border: 3px double purple;
+  background-color: pink;
+  width: 500px;
+}
+
+.box
+{
+  font-family: 'Nosifer', cursive;
+  font-size: 45px;
+  float: left;
+  padding: 20px;
+  border: 1px dashed black;
+  margin: 5px;
+}
+
+.clear
+{
+  clear: both;
+}

@@ -1,0 +1,14 @@
+#new_exercise
+.row
+  .large-4.columns
+    .float
+      = link_to('New', new_exercise_path, :remote => true, :class => 'button radius tiny success')
+    .float
+      = button_tag 'Chart', :class => 'button radius tiny', :id => 'show_chart'
+    .float
+      = select_tag 'activities', options_for_select(@activities.map{ |a| [a, a] })
+    .clear
+  .large-8.columns
+
+#chart
+%ol#exercises

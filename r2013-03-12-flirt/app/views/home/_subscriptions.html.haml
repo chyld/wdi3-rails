@@ -1,0 +1,6 @@
+- if @auth.present? && @auth.sub.present? && !@auth.sub.has_subscription?
+  %table.full-width
+    %tr
+      - Subscription.all.each do |subscription|
+        %td
+          = button_to(subscription.plan, purchase_subscribers_path(:plan => subscription.plan), :remote => true, :class => 'large button expand radius success')

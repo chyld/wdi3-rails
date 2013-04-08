@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "",
+  "sourceRoot": "",
+  "sources": [
+    "/assets/source_maps/app/assets/javascripts/routes/posts_new_route.coffee"
+  ],
+  "names": [],
+  "mappings": "AAAA;CAAA,CAAA,CAAG,EAAsB,CAAL,OAApB;CACE,CAAO,CAAA,CAAP,CAAA,IAAO;CAAQ,EAAD,CAAK,QAAR,CAAA;CAAX,IAAO;CADT,GAAoB;CAApB"
+}

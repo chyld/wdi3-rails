@@ -1,0 +1,20 @@
+#music
+#graphics
+  %svg
+
+%table
+  %tr
+    %th Artist
+    %th Album
+    %th Song
+    %th Position
+    %th Image
+  - @artists.each do |artist|
+    - artist.albums.each do |album|
+      - album.songs.each do |song|
+        %tr
+          %td= artist.name
+          %td= album.name
+          %td{:'data-filename' => song.filename, :'data-position' => song.position}= link_to(song.name, '#', :class => 'play')
+          %td= song.position
+          %td= image_tag(album.image)

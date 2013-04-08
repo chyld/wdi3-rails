@@ -1,0 +1,12 @@
+%table
+  %tr
+    %th Name
+    %th Rows
+    %th Cols
+    %th Seats
+  - @airplanes.each do |airplane|
+    %tr
+      %td= airplane.name
+      %td= airplane.rows
+      %td= airplane.cols
+      %td= airplane.seats

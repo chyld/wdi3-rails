@@ -1,0 +1,26 @@
+<%= form_for @recipe do |f| %>
+  <%= f.text_field :name, :autofocus => true %>
+  <%= f.label :name %>
+  <br>
+  <%= f.text_field :course %>
+  <%= f.label :course %>
+  <br>
+  <%= f.text_field :cooktime %>
+  <%= f.label :cooktime %>
+  <br>
+  <%= f.text_field :servingsize %>
+  <%= f.label :servingsize %>
+  <br>
+  <%= f.text_field :instructions %>
+  <%= f.label :instructions %>
+  <br>
+  <%= f.text_field :image %>
+  <%= f.label :image %>
+  <br>
+  <% Ingredient.order(:name).each do |ingredient| %>
+    <span><%= ingredient.name %></span>
+    <%= check_box_tag 'recipe[ingredient_ids][]', ingredient.id, ingredient.in?(@recipe.ingredients.to_a) %>
+  <% end %>
+  <br>
+  <%= f.submit %>
+<% end %>

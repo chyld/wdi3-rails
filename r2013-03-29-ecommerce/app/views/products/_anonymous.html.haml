@@ -1,0 +1,6 @@
+%script{:src => "https://checkout.stripe.com/v2/checkout.js",
+        :class => "stripe-button",
+        :'data-label' => product.name,
+        :'data-amount' => product.cost * 100,
+        :'data-key' => Rails.configuration.stripe[:publishable_key]}
+= form_tag purchase_product_path(product), :remote => true do end

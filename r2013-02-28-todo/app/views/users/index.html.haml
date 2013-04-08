@@ -1,0 +1,6 @@
+%ol
+  - @users.each do |user|
+    %li
+      %ul
+        %li= user.name
+        %li= user.email

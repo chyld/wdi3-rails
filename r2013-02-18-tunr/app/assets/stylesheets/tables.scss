@@ -1,0 +1,22 @@
+@import 'colors';
+
+table
+{
+  .row0 td
+  {
+    color: $row_fg0_color;
+    background-color: $row_bg0_color;
+  }
+
+  .row1 td
+  {
+    color: $row_fg1_color;
+    background-color: $row_bg1_color;
+  }
+
+  img
+  {
+    width: 100px;
+    height: 100px;
+  }
+}

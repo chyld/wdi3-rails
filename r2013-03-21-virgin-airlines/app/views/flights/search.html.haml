@@ -1,0 +1,9 @@
+.row
+  .large-3.columns
+    = form_tag filter_flights_path, :method => :get do
+      = label_tag :depart
+      = text_field_tag :depart, nil, :autofocus => true
+      = label_tag :arrive
+      = text_field_tag :arrive
+      = submit_tag 'Search for Flights', :class => 'button tiny radius success'
+  .large-9.columns

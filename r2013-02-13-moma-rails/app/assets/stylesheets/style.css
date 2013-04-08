@@ -1,0 +1,39 @@
+@import url(http://fonts.googleapis.com/css?family=Quintessential);
+
+body
+{
+  font-family: 'Quintessential', cursive;
+  font-size: 13px;
+  color: #757575;
+}
+
+img
+{
+  width: 75px;
+  height: 75px;
+  border: 1px solid #252525;
+}
+
+nav li
+{
+  list-style-type: none;
+  float: left;
+  font-size: 35px;
+  padding-left: 20px;
+}
+
+a
+{
+  color: #ff33cc;
+  text-decoration: none;
+}
+
+section
+{
+  padding-top: 25px;
+}
+
+.clear
+{
+  clear: both;
+}

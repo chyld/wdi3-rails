@@ -1,0 +1,16 @@
+.row
+  .five.columns
+    = render(:partial => 'shared/errors', :locals => {:object => @user})
+    = form_for @user do |f|
+      = f.label :name
+      = f.text_field :name, :autofocus => true
+      = f.label :balance
+      = f.text_field :balance
+      = f.label :image
+      = f.text_field :image
+      = f.label :password
+      = f.password_field :password
+      = f.label :password_confirmation
+      = f.password_field :password_confirmation
+      = f.submit nil, :class => 'button radius'
+  .seven.columns

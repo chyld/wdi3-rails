@@ -1,0 +1,7 @@
+.row
+  .large-8.columns
+    Ember.TextField valueBinding='title'
+    Ember.TextField valueBinding='author'
+    Ember.TextArea valueBinding='body'
+    button{action 'save'} class='button tiny radius success' Save
+  .large-4.columns

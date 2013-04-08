@@ -1,0 +1,6 @@
+<% if @user.valid? %>
+  $('#form').empty().after('<p>You have successfully created an account!</p>');
+  $('#form + p').fadeOut(3000, function(){ $('#form + p').remove(); });
+<% else %>
+  $('#form').empty().append('<%=j render(:partial => 'form') %>');
+<% end %>

@@ -1,0 +1,10 @@
+%p.newlink= link_to('New Album', new_album_path, :class => 'button radius') if is_admin?
+%table
+  - @albums.each do |album|
+    %tr{:class => cycle('row0', 'row1')}
+      %td= album.name
+      %td= image_tag(album.image)
+      %td= album.songs.count
+      %td= show_album(album)
+      %td= link_to('Show', album, :class => 'button radius success tiny')
+      %td= link_to('Edit', edit_album_path(album), :class => 'button radius tiny') if is_admin?

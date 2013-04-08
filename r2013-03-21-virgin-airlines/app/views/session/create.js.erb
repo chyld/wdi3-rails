@@ -1,0 +1,8 @@
+$('#user').remove();
+
+<% if @auth.present? %>
+  $('#nav').empty().append('<%=j render partial: 'layouts/nav' %>');
+<% else %>
+  $('#navbuttons').prepend("<li id='user'>");
+  $('#navbuttons li:first-child').append('<%=j render partial: 'form' %>');
+<% end %>

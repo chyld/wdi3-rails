@@ -1,0 +1,13 @@
+<ol>
+<% @paintings.each do |painting| %>
+  <li>
+    <ul>
+      <li><%= link_to painting.title, painting %></li>
+      <li><%= painting.year %></li>
+      <li><%= painting.medium %></li>
+      <li><%= painting.style %></li>
+      <li><%= image_tag(painting.image) %></li>
+    </ul>
+  </li>
+<% end %>
+</ol>

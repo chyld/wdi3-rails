@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "",
+  "sourceRoot": "",
+  "sources": [
+    "/assets/source_maps/app/assets/javascripts/models/post.coffee"
+  ],
+  "names": [],
+  "mappings": "AAAA;CAAA,CAAA,CAAG,CAAH,CAAmB,CAAR;CACT,CAAO,EAAP,CAAA,GAAO;CAAP,CACQ,EAAR,EAAA,EAAQ;CADR,CAEM,EAAN,IAAM;CAFN,CAGQ,EAAR,EAAA;CAJF,GAAW;CAAX"
+}

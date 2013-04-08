@@ -1,0 +1,14 @@
+.row
+  .large-3.columns
+    = form_for @user, :remote => true do |f|
+      = f.label :email
+      = f.text_field :email, :autofocus => true
+      = f.label :balance
+      = f.text_field :balance
+      = f.label :password
+      = f.password_field :password
+      = f.label :password_confirmation
+      = f.password_field :password_confirmation
+      = link_to('Cancel', '#', :id => 'cancel_user_form', :class => 'button radius tiny alert')
+      = f.submit nil, :class => 'button radius tiny'
+  .large-9.columns

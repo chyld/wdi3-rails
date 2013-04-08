@@ -1,0 +1,11 @@
+%table
+  %tr
+    %th Departure
+    %th Flight #
+    %th Departs
+    %th Arrives
+    %th Airplane
+    %th Seats
+    %th Reserved
+    %th Available
+  = render(:partial => 'flight', :collection => @flights, :as => :flight)

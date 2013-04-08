@@ -1,0 +1,21 @@
+<%= form_for @painting do |f| %>
+  <%= f.label :artist_id %>
+  <%= f.select :artist_id, Artist.all.map{|artist| [artist.name, artist.id]}, :include_blank => true, :prompt => "Pick Artist!" %>
+  <br>
+  <%= f.text_field :title %>
+  <%= f.label :title %>
+  <br>
+  <%= f.text_field :year %>
+  <%= f.label :year %>
+  <br>
+  <%= f.text_field :medium %>
+  <%= f.label :medium %>
+  <br>
+  <%= f.text_field :style %>
+  <%= f.label :style %>
+  <br>
+  <%= f.text_field :image %>
+  <%= f.label :image %>
+  <br>
+  <%= f.submit %>
+<% end %>

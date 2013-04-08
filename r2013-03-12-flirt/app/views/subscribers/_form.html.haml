@@ -1,0 +1,15 @@
+.row
+  .large-3.columns
+    = render(:partial => 'shared/errors', :locals => {:object => @user})
+    = form_for @user, :url => subscribers_path, :remote => true do |f|
+      = f.label :username
+      = f.text_field :username, :autofocus => true
+      = f.label :email
+      = f.text_field :email
+      = f.label :password
+      = f.password_field :password
+      = f.label :password_confirmation
+      = f.password_field :password_confirmation
+      = link_to('Cancel', '#', :'data-clear-form' => true, :class => 'button tiny radius alert')
+      = f.submit nil, :class => 'button tiny radius success'
+  .large-9.columns

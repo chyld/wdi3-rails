@@ -1,0 +1,12 @@
+%table
+  - songs.each do |song|
+    %tr{:class => cycle('row0', 'row1')}
+      %td= link_to(song.name, song, :class => 'button radius success tiny')
+      %td= image_tag(song.image)
+      %td= show_song(song).try(:html_safe)
+      %td= link_to(song.artist.name, song.artist, :class => 'button radius secondary tiny') if song.artist.present?
+      %td= link_to(song.album.name, song.album, :class => 'button radius secondary tiny') if song.album.present?
+      %td
+        - song.genres.each do |genre|
+          %p= link_to(genre.name, genre, :class => 'button radius secondary tiny')
+      %td= link_to('Edit', edit_song_path(song), :class => 'button radius tiny') if is_admin?

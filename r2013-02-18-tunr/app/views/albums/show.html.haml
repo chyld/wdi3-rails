@@ -1,0 +1,2 @@
+%h1= @album.name
+= render :partial => '/shared/songs', :locals => {:songs => @album.songs}

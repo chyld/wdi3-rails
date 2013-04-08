@@ -1,0 +1,47 @@
+li
+{
+  list-style-type: none;
+}
+
+#map_canvas
+{
+  width: 900px;
+  height: 300px;
+  border: 1px solid black;
+  margin-bottom: 15px;
+}
+
+ul#tasks
+{
+  margin-top: 10px;
+}
+
+.hide
+{
+  display: hidden;
+}
+
+.priority, .task
+{
+  float: left;
+  margin-left: 5px;
+}
+
+.color
+{
+  border: 1px solid black;
+  width: 20px;
+  height: 20px;
+  margin: 0px 5px 5px 5px;
+  border-radius: 5px;
+}
+
+.color:hover
+{
+  border: 1px solid #ffffff;
+}
+
+.clear
+{
+  clear: both;
+}

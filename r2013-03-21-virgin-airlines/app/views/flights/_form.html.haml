@@ -1,0 +1,15 @@
+.row
+  .large-3.columns
+    = form_for @flight, :remote => true do |f|
+      = f.select :airplane_id, Airplane.order(:name).map{|a| [a.name, a.id]}
+      = f.label :name
+      = f.text_field :name, :autofocus => true
+      = f.label :depart
+      = f.text_field :depart
+      = f.label :arrive
+      = f.text_field :arrive
+      = f.label :departure
+      = f.text_field :departure, :value => Date.current + 1.day
+      = link_to('Cancel', '#', :'data-clear-form' => true, :class => 'button tiny radius alert')
+      = f.submit nil, :class => 'button tiny radius success'
+  .large-9.columns

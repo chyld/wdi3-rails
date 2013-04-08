@@ -1,0 +1,8 @@
+<%= form_tag '/pinterest', :method => 'get' do %>
+  <%= submit_tag 'Get Photos' %>
+<% end %>
+
+<%= form_tag '/pinterest', :method => 'get' do %>
+  <%= text_field_tag 'query' %>
+  <%= submit_tag 'Get Photos' %>
+<% end %>

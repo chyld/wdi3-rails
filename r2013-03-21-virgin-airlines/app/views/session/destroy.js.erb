@@ -1,0 +1,5 @@
+$('#user').remove();
+$('#nav').empty().append('<%=j render partial: 'layouts/nav' %>');
+
+if(document.location.pathname != '/')
+  document.location.href = '/';

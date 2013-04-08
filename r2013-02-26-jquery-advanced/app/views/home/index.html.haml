@@ -1,0 +1,25 @@
+#x
+#y
+
+#text
+
+
+= form_tag '/' do
+  = text_field_tag 'name', nil, :autofocus => true
+  = text_field_tag 'age'
+  = submit_tag 'Enter Data'
+
+%h1 advanced jquery
+.one#a 1a
+.one#b 1b
+.one#c 1c
+.two#d 2a
+.two#e 2b
+.list#f
+  %ul
+    %li#g a
+    %li#h b
+    %li#i c
+    %li#j
+      %p#k
+        %span#l super deep nesting

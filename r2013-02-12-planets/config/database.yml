@@ -1,0 +1,8 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: r2013-02-12-planets_development
+  pool: 5
+  host: localhost
+  username: chyld
+  password:

@@ -1,0 +1,8 @@
+.row
+  .large-3.columns
+    = form_for @album, :remote => true do |f|
+      = f.label :name
+      = f.text_field :name, :autofocus => true
+      = link_to 'Cancel', '#', :'data-clear-form' => true, :class => 'button tiny radius alert'
+      = f.submit nil, :class => 'button tiny radius success'
+  .large-9.columns

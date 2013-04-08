@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  title: MyString
+  is_in_theatres: false
+  released: 2013-02-11
+  rating: MyString
+  description: MyText
+
+two:
+  title: MyString
+  is_in_theatres: false
+  released: 2013-02-11
+  rating: MyString
+  description: MyText

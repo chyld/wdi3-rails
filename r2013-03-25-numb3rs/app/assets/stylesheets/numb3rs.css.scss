@@ -1,0 +1,31 @@
+@import url(http://fonts.googleapis.com/css?family=Gabriela);
+
+body
+{
+  background-color: #252525;
+}
+
+#word
+{
+  font-family: 'Gabriela', serif;
+  font-size: 75px;
+  color: yellow;
+}
+
+table
+{
+  width: 100%;
+}
+
+td
+{
+  overflow: auto;
+  font-size: 30px;
+  font-family: monospace;
+  width: 33%;
+  padding: 50px;
+  margin: 25px;
+  border: 1px solid black;
+  color: black;
+  background-color: white;
+}

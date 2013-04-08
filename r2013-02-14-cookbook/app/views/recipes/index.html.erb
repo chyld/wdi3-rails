@@ -1,0 +1,17 @@
+<%= link_to('New Recipe', new_recipe_path) %>
+<div class='spacer'></div>
+
+<ol>
+<% @recipes.each do |recipe| %>
+  <li>
+    <ul>
+      <li><%= link_to(recipe.name, recipe) %></li>
+      <li><%= recipe.course %></li>
+      <li><%= recipe.cooktime %></li>
+      <li><%= recipe.servingsize %></li>
+      <li><%= recipe.instructions %></li>
+      <li><%= image_tag(recipe.image) %></li>
+    </ul>
+  </li>
+<% end %>
+</ol>

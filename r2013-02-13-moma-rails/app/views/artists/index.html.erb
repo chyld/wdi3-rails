@@ -1,0 +1,13 @@
+<ol>
+<% @artists.each do |artist| %>
+  <li>
+    <ul>
+      <li><%= link_to artist.name, artist %></li>
+      <li><%= artist.nationality %></li>
+      <li><%= artist.dob.strftime('%B %d, %Y') %></li>
+      <li><%= artist.period %></li>
+      <li><%= image_tag(artist.image) %></li>
+    </ul>
+  </li>
+<% end %>
+</ol>

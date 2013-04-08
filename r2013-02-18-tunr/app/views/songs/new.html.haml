@@ -1,0 +1,18 @@
+.row
+  .five.columns
+    = render(:partial => 'shared/errors', :locals => {:object => @song})
+    = form_for @song do |f|
+      = f.label :name
+      = f.text_field :name, :autofocus => true
+      = f.label :image
+      = f.text_field :image
+      = f.label :filename
+      = f.text_field :filename
+      = f.label :cost
+      = f.text_field :cost
+      %p
+        - Genre.find(:all, :order => 'LOWER(name)').each do |genre|
+          %span= genre.name
+          = check_box_tag 'song[genre_ids][]', genre.id, genre.in?(@song.genres.to_a)
+      = f.submit nil, :class => 'button radius'
+  .seven.columns

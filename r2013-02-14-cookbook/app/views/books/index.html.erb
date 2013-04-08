@@ -1,0 +1,15 @@
+<%= link_to('New Book', new_book_path) %>
+<div class='spacer'></div>
+
+<ol>
+<% @books.each do |book| %>
+  <li>
+    <ul>
+      <li><%= link_to(book.title, book) %></li>
+      <li><%= book.cuisine %></li>
+      <li><%= book.chef %></li>
+      <li><%= image_tag(book.image) %></li>
+    </ul>
+  </li>
+<% end %>
+</ol>

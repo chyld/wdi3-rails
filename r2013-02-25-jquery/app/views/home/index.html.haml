@@ -1,0 +1,23 @@
+%h1 I <3 jquery
+.one a
+.one b
+.one c
+#two d
+
+%p
+  .one= text_field_tag 'name'
+  .one= submit_tag 'get name', :id => 'btn'
+
+%p
+  .one= text_field_tag 'color'
+  .one= submit_tag 'get color', :id => 'btncolor'
+
+%p
+  .one= submit_tag 'hide', :id => 'btnhide'
+  .one= submit_tag 'show', :id => 'btnshow'
+
+%p
+  = text_field_tag 'width'
+  = text_field_tag 'height'
+  = submit_tag 'get area', :id => 'btnarea'
+  #area

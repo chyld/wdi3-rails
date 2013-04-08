@@ -1,0 +1,35 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat+Alternates);
+@import url(http://fonts.googleapis.com/css?family=Emblema+One);
+
+body
+{
+  background-color: #252525;
+}
+
+#app
+{
+  background-color: #cccccc;
+  margin: 0px auto;
+  width: 400px;
+  padding: 25px;
+}
+
+#header
+{
+  font-size: 50px;
+  font-family: 'Emblema One', cursive;
+  margin-bottom: 10px;
+}
+
+.output
+{
+  font-family: 'Montserrat Alternates', sans-serif;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px dashed #252525;
+}
+
+.alert
+{
+  background-color: #ff00ff;
+}

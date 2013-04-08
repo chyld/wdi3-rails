@@ -1,0 +1,26 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: r2013-04-05-posterous_development
+  pool: 5
+  host: localhost
+  username: chyld
+  password:
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: r2013-04-05-posterous_test
+  pool: 5
+  host: localhost
+  username: chyld
+  password:
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: r2013-04-05-posterous_production
+  pool: 5
+  host: localhost
+  username: chyld
+  password:

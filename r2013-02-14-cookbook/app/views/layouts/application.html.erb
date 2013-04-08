@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>R20130214Cookbook</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><%= link_to('Books', books_path) %></li>
+      <li><%= link_to('Recipes', recipes_path) %></li>
+      <li><%= link_to('Ingredients', ingredients_path) %></li>
+      <li class='clear'>&nbsp;</li>
+    </ul>
+  </nav>
+  <section><%= yield %></section>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<div class="row">
+  <div class="three columns">
+    <h1><%= link_to(image_tag('logo.jpg'), root_path) %></h1>
+  </div>
+  <div class="nine columns">
+    <ul class="nav-bar right">
+      <li class="has-flyout">
+        <a href="#">Browse Music</a>
+        <a href="#" class="flyout-toggle"><span> </span></a>
+          <ul class="flyout">
+            <li><%= link_to('Genres', genres_path) %></li>
+            <li><%= link_to('Songs', songs_path) %></li>
+            <li><%= link_to('Albums', albums_path) %></li>
+            <li><%= link_to('Artists', artists_path) %></li>
+          </ul>
+      </li>
+
+      <% if is_user? %>
+        <li class="has-flyout">
+          <a href="#">Mixtapes</a>
+          <a href="#" class="flyout-toggle"><span> </span></a>
+            <ul class="flyout">
+              <li><%= link_to('Create Mixtape', new_mixtape_path) %></li>
+              <%== mixtapenav %>
+            </ul>
+        </li>
+      <% end %>
+
+      <% if is_user? %>
+        <li class="has-flyout">
+          <a href="#">Albums</a>
+          <a href="#" class="flyout-toggle"><span> </span></a>
+            <ul class="flyout">
+              <%== albumnav %>
+            </ul>
+        </li>
+      <% end %>
+
+      <%== intellinav %>
+    </ul>
+  </div>
+</div>

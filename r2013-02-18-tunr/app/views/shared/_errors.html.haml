@@ -1,0 +1,5 @@
+- if object.errors.any?
+  %ol
+    - object.errors.full_messages.each do |msg|
+      %li
+        %span.label.alert.radius= msg

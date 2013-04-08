@@ -1,0 +1,17 @@
+.row
+  .large-4.columns
+    = form_for @product, :html => {:multipart => true}, :remote => true do |f|
+      = f.label :name
+      = f.text_field :name, :autofocus => true
+      = f.label :description
+      = f.text_area :description
+      = f.label :cost
+      = f.number_field :cost
+      = f.label :address
+      = f.text_field :address
+      = f.file_field :image
+      = f.text_field :remote_image_url
+      = f.label :tags
+      = text_field_tag :tags
+      = f.submit nil, :class => 'button tiny success'
+  .large-8.columns

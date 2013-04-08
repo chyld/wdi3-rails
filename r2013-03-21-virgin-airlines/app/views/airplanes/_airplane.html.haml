@@ -1,0 +1,9 @@
+.airplane
+  %table
+    - (1..airplane.cols).each do |col|
+      %tr
+        - (1..airplane.rows).each do |row|
+          - if flight.is_reserved?(col, row)
+            %td.taken.has-tip{:'data-tooltip' => true, :title => flight.manifest(col, row)}= Airplane.seat_name(col, row)
+          - else
+            %td.available{:'data-col' => col, :'data-row' => row}= Airplane.seat_name(col, row)
