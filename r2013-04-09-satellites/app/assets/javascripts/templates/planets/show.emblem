@@ -1,3 +1,5 @@
+h5.subheader = name
+
 table
   tr
     th Name
@@ -5,10 +7,10 @@ table
     th Period
     th Diameter
     th Distance
-  each satellite in satellites
+  each satellites
     tr
-      td: satellite.name
-      td: img src=satellite.image
-      td: satellite.period
-      td: satellite.distance
-      td: satellite.diameter
+      td: name
+      td: img src=image
+      td: period
+      td: distance
+      td: diameter

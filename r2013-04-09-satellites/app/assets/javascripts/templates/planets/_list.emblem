@@ -1,0 +1,9 @@
+h5.subheader Planets
+table
+  tr
+    th Planet
+    th Image
+  each model
+    tr
+      td: linkTo 'planets.show' this class='button tiny radius alert': name
+      td: img src=image
