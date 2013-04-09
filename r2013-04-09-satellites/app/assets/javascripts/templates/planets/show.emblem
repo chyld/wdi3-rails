@@ -1,0 +1,14 @@
+table
+  tr
+    th Name
+    th Image
+    th Period
+    th Diameter
+    th Distance
+  each satellite in satellites
+    tr
+      td: satellite.name
+      td: img src=satellite.image
+      td: satellite.period
+      td: satellite.distance
+      td: satellite.diameter

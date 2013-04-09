@@ -1,0 +1,8 @@
+.row
+  .large-12.columns
+    h1.subheader Satellites
+    linkTo 'index'   class='button tiny radius space' | Home
+    linkTo 'about'   class='button tiny radius space' | About
+    linkTo 'faq'     class='button tiny radius space' | Faq
+    linkTo 'planets' class='button tiny radius space' | Planets
+    outlet

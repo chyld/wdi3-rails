@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "",
+  "sourceRoot": "",
+  "sources": [
+    "/assets/source_maps/app/assets/javascripts/models/planet.coffee"
+  ],
+  "names": [],
+  "mappings": "AAAA;CAAA,CAAA,CAAG,EAAkB,CAArB;CACE,CAAM,EAAN,IAAM;CAAN,CACO,EAAP,CAAA,GAAO;CADP,CAEY,EAAZ,GAAY,GAAZ,KAAY;CAHd,GAAa;CAAb"
+}

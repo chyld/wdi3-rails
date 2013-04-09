@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "",
+  "sourceRoot": "",
+  "sources": [
+    "/assets/source_maps/app/assets/javascripts/models/satellite.coffee"
+  ],
+  "names": [],
+  "mappings": "AAAA;CAAA,CAAA,CAAG,EAAqB,CAAR,GAAhB;CACE,CAAM,EAAN,IAAM;CAAN,CACO,EAAP,CAAA,GAAO;CADP,CAEQ,EAAR,EAAA,EAAQ;CAFR,CAGU,EAAV,IAAA;CAHA,CAIU,EAAV,IAAA;CAJA,CAKQ,EAAR,EAAA,GAAQ,GAAA;CANV,GAAgB;CAAhB"
+}
