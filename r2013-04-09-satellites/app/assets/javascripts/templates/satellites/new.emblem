@@ -1,0 +1,16 @@
+h5.subheader New Satellite
+
+table
+  tr: td: | Name
+  tr: td: Ember.TextField valueBinding='name'
+  tr: td: | Image
+  tr: td: Ember.TextField valueBinding='image'
+  tr: td: | Distance
+  tr: td: Ember.TextField valueBinding='distance'
+  tr: td: | Diameter
+  tr: td: Ember.TextField valueBinding='diameter'
+  tr: td: | Period
+  tr: td: Ember.TextField valueBinding='period'
+  tr: td
+    button{action save} class='button tiny radius space' Save
+    button{action cancel} class='button tiny radius space secondary' Cancel

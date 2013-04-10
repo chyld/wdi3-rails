@@ -1,5 +1,5 @@
 if isNew
-  h1 new satellite
+  render 'satellites/new'
 else
   button{action newSatellite} class='button tiny radius success' New Satellite
 
