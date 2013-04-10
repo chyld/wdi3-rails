@@ -3,6 +3,7 @@ h4.subheader Planets
 table
   tr
     td
+      linkTo 'planets.new' class='button tiny radius success' | New Planet
       partial 'planets/list'
     td
       outlet

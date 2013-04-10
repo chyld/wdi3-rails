@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "",
+  "sourceRoot": "",
+  "sources": [
+    "/assets/source_maps/app/assets/javascripts/routes/planets_new_route.coffee"
+  ],
+  "names": [],
+  "mappings": "AAAA;CAAA,CAAA,CAAG,EAAwB,CAAL,SAAtB;CACE,CAAO,CAAA,CAAP,CAAA,IAAO;CAAO,EAAD,GAAO,MAAV,CAAA;CAAV,IAAO;CADT,GAAsB;CAAtB"
+}

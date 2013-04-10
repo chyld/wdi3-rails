@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "",
+  "sourceRoot": "",
+  "sources": [
+    "/assets/source_maps/app/assets/javascripts/controllers/planets_new_controller.coffee"
+  ],
+  "names": [],
+  "mappings": "AAAA;CAAA,CAAA,CAAG,EAA6B,CAAL,UAAsB,IAAjD;CACE,CAAM,CAAA,CAAN,KAAM;CACJ,EAAA,CAAC,EAAD,CAAA;CACC,GAAA,SAAD,EAAA,EAAA;CAFF,IAAM;CAAN,CAGQ,CAAA,CAAR,EAAA,GAAQ;CACL,GAAA,SAAD,EAAA,EAAA;CAJF,IAGQ;CAJV,GAA2B;CAA3B"
+}

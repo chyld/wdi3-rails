@@ -5,6 +5,7 @@ App.Router.map ->
   @route 'about'
   @route 'faq'
   @resource 'planets', ->
+    @route 'new'
     @route 'show', {path: ':planet_id'}
 
 App.Store = DS.Store.extend

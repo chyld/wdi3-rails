@@ -1,0 +1,10 @@
+h5.subheader New Planet
+
+table
+  tr: td: | Name
+  tr: td: Ember.TextField valueBinding='name'
+  tr: td: | Image
+  tr: td: Ember.TextField valueBinding='image'
+  tr: td
+    button{action save} class='button tiny radius space' Save
+    button{action cancel} class='button tiny radius space secondary' Cancel
