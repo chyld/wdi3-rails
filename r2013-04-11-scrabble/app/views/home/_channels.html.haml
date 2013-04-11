@@ -1,0 +1,7 @@
+- if @auth.present?
+  %table
+    %tr
+      %th Channel
+    - @channels.each do |channel|
+      %tr
+        %td= channel.name
