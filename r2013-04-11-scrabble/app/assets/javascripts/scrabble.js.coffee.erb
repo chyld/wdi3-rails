@@ -4,6 +4,7 @@ window.app =
   pusher: null
   ready: ->
     $('#channels').on('click', '.channel', app.select_cell)
+    $('#chat_console').on('click', '#chat_button', app.send_chat)
     app.pusher = new Pusher('<%= Pusher.key %>')
   select_cell: ->
     app.selected_cell.removeClass('selected_cell') if app.selected_cell
@@ -23,6 +24,13 @@ window.app =
     channel = app.pusher.channels.channels[app.selected_channel]
     channel.bind('chat', app.chat)
   chat: (data) ->
-    console.log(data)
+    message = $('<div class="message">')
+    message.text(data)
+    $('#chat_message_list').prepend(message)
+  send_chat: (e) ->
+    $('#chat_channel').val(app.selected_channel)
+    form = $(this).parent()
+    form.submit()
+    $('#chat_message').val('').focus()
 
 $(document).ready(app.ready)

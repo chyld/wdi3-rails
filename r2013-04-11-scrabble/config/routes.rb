@@ -4,4 +4,5 @@ R20130411Scrabble::Application.routes.draw do
   delete '/login' => 'session#destroy'
   post '/channel' => 'channels#create'
   get '/refresh' => 'channels#refresh'
+  post '/send_chat' => 'game#send_chat'
 end

@@ -1,0 +1,9 @@
+- if @auth.present?
+  .row
+    .large-2.columns
+      = form_tag '/send_chat', :remote => true do
+        = text_field_tag 'chat_message', nil, :autofocus => true
+        = hidden_field_tag 'chat_channel'
+        = button_tag 'Chat', :id => 'chat_button', :class => 'button tiny radius'
+    .large-10.columns
+      #chat_message_list
