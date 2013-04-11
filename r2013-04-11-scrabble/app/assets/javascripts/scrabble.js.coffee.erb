@@ -4,7 +4,7 @@ window.app =
   pusher: null
   ready: ->
     $('#channels').on('click', '.channel', app.select_cell)
-    app.pusher = new Pusher('3a852337fd2551e668fc')
+    app.pusher = new Pusher('<%= Pusher.key %>')
   select_cell: ->
     app.selected_cell.removeClass('selected_cell') if app.selected_cell
 

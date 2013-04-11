@@ -8,7 +8,7 @@
   <title>Scrabble</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
-  <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=#{ENV['GOOGLE']}&sensor=false" %>
+  <script src="http://js.pusher.com/2.0/pusher.min.js"></script>
   <%= csrf_meta_tags %>
 </head>
 <body>
