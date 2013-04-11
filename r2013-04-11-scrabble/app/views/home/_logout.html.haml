@@ -1,0 +1,5 @@
+- if @auth.present?
+  .row
+    .large-2.columns
+      = link_to(@auth.username, '/login', :method => :delete, :remote => true, :class => 'button tiny radius alert')
+    .large-10.columns

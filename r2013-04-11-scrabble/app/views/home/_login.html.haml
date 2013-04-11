@@ -1,0 +1,7 @@
+- if @auth.nil?
+  .row
+    .large-2.columns
+      = form_tag '/login', :remote => true do
+        = text_field_tag 'username', nil, :autofocus => true
+        = submit_tag 'Login', :class => 'button tiny radius'
+    .large-10.columns
