@@ -1,0 +1,9 @@
+%table
+  %tr
+    - @game.users.each do |user|
+      -if @game.current_player == user.username
+        %td.current_player= user.username
+      -elsif @auth.username == user.username
+        %td.self_player= user.username
+      - else
+        %td= user.username

@@ -1,10 +1,15 @@
-#chat_console
-  = render 'chat_console'
-#login
-  = render 'login'
-#logout
-  = render 'logout'
-#channel_form
-  = render 'channel_form'
-#channels
-  = render 'channels'
+.row#auth_token{:'data-auth-token' => form_authenticity_token}
+  .large-2.columns
+    #login
+      = render 'login'
+    #logout
+      = render 'logout'
+    #channels
+      = render 'channels'
+    #channel_form
+      = render 'channel_form'
+  .large-2.columns
+    #chat_console
+      = render 'chat_console'
+  .large-8.columns
+    #game_center

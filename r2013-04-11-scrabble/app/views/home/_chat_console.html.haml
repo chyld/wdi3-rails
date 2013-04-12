@@ -1,9 +1,13 @@
 - if @auth.present?
   .row
-    .large-2.columns
+    .large-12.columns
+      = link_to_function 'Start Game', 'app.start_game()', :class => 'button tiny radius success'
+  .row
+    .large-12.columns
       = form_tag '/send_chat', :remote => true do
         = text_field_tag 'chat_message', nil, :autofocus => true
         = hidden_field_tag 'chat_channel'
         = button_tag 'Chat', :id => 'chat_button', :class => 'button tiny radius'
-    .large-10.columns
+  .row
+    .large-12.columns
       #chat_message_list

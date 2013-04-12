@@ -12,4 +12,5 @@
 
 class User < ActiveRecord::Base
   attr_accessible :username, :channel, :is_online
+  has_and_belongs_to_many :games
 end

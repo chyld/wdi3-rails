@@ -1,0 +1,8 @@
+#players
+  = render 'players'
+
+%table
+  - 15.times do |r|
+    %tr
+      - 15.times do |c|
+        %td.square{:'data-row' => r+1, :'data-col' => c+1} .

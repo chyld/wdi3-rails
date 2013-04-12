@@ -8,7 +8,6 @@ window.app =
     app.pusher = new Pusher('<%= Pusher.key %>')
   select_cell: ->
     app.selected_cell.removeClass('selected_cell') if app.selected_cell
-
     if app.selected_cell && (app.selected_cell[0] == this)
       app.selected_cell = null
     else
@@ -23,14 +22,30 @@ window.app =
   bind_events: ->
     channel = app.pusher.channels.channels[app.selected_channel]
     channel.bind('chat', app.chat)
+    channel.bind('joingame', app.joingame)
   chat: (data) ->
     message = $('<div class="message">')
     message.text(data)
     $('#chat_message_list').prepend(message)
   send_chat: (e) ->
+    e.preventDefault()
     $('#chat_channel').val(app.selected_channel)
     form = $(this).parent()
     form.submit()
     $('#chat_message').val('').focus()
+  start_game: ->
+    token = $('#auth_token').data('auth-token')
+    settings =
+      dataType: 'script'
+      type: "post"
+      url: "/start_game"
+      data: {authenticity_token: token, channel: app.selected_channel}
+    $.ajax(settings)
+  joingame: (data) ->
+    settings =
+      dataType: 'script'
+      type: "get"
+      url: "/refresh_players/#{app.selected_channel}"
+    $.ajax(settings)
 
 $(document).ready(app.ready)
