@@ -1,9 +1,9 @@
 %table
   %tr
-    - @game.users.each do |user|
-      -if @game.current_player == user.username
-        %td.current_player= user.username
-      -elsif @auth.username == user.username
-        %td.self_player= user.username
+    - @game.users.map(&:username).sort.each do |user|
+      -if @game.current_player == user
+        %td.current_player= user
+      -elsif @auth.username == user
+        %td.self_player= user
       - else
-        %td= user.username
+        %td= user

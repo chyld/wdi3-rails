@@ -2,6 +2,8 @@
   .row
     .large-12.columns
       = link_to_function 'Start Game', 'app.start_game()', :class => 'button tiny radius success'
+      = link_to_function 'Next Player', 'app.next_player()', :class => 'button tiny radius alert'
+      = link_to_function 'Grab Letters', 'app.grab_letters()', :class => 'button tiny radius'
   .row
     .large-12.columns
       = form_tag '/send_chat', :remote => true do

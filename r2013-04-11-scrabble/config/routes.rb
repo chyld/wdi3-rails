@@ -7,4 +7,7 @@ R20130411Scrabble::Application.routes.draw do
   post '/send_chat' => 'games#send_chat'
   post '/start_game' => 'games#start_game'
   get '/refresh_players/:channel' => 'games#refresh_players'
+  post '/transmit_letter' => 'games#transmit_letter'
+  post '/next_player' => 'games#next_player'
+  post '/grab_letters' => 'games#grab_letters'
 end
